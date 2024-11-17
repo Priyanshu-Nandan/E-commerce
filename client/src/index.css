@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+    display: none;
+    
+}
+.vg-home.active, .vg-collection.active, .vg-about.active, .vg-contact.active {
+    color: #fff;
+    background: #08aadf;
+    border-radius: 80px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.vg-home, .vg-collection, .vg-about, .vg-contact {
+  padding: 10px 20px;
+    margin: 10px 0;
+}
+
+*{
+    font-family: Outfit;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
+  @media (max-width:640px) {
+    a.active{
+        color: white;
+    }
+  }
+  .tg-hero {
+    height:415px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .vg-product-item{
+    padding: 5px 5px;
+    
+  }
+  .vg-product-item:hover{
+    border-color: #dcdcdc;
+    box-shadow: 0 0px 5px 1px rgba(51, 51, 51, 0.3);
+  }
+  .vg-filter {
+    box-shadow: 0 0px 5px 1px rgba(51, 51, 51, 0.3);
+  }
+  .vg-search-icon, .vg-profile-icon, .vg-cart-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 5px 5px;
+  }
+  .vg-search-icon:hover,.vg-profile-icon:hover, .vg-cart-icon:hover {
+    transform: scale(1.1);
+    background-color: #08aadf;
+  }
+  .vg-title {
+    color: #fff;
+    background: #08aadf;
+    border-radius: 80px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  .vg-sort {
+    height: 42px;
+  }
+  .tg-navbar-client {
+    padding: 15px 10px;
+  }
